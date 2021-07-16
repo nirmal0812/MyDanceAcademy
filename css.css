@@ -149,26 +149,33 @@ header p {
 /*WORKSHOPS*/
 .workshops {
     /* background: rgb(219, 219, 219); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.767)),url(images/studio.jpg);
+    background-image: linear-gradient(rgba(107, 107, 107, 0.767),rgb(0, 0, 0)),url(images/studio.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    
-}
-
-video {
-    height: 45vh;
-    width: 75vh;
-    padding: 10px;
 }
 
 .container {
     display: flex;
+    flex-direction: row;
     justify-content:center;
     align-items: center;
     flex-wrap: wrap;
 }
-.container li {
+.container>li {
+    flex: 0 1 500px;
+    height: 25%;
+    width: 1%;
     list-style: none;
+}
+
+.container>li>video {
+    height: 60vh;
+    width: 100%;
+    padding: 10px;
 }
 /*-----------------------------------------------------------------*/
 /*DANCE STYLES*/
@@ -210,7 +217,6 @@ video {
 /*-----------------------------------------------------------------*/
 /*FEEDBACK SECTION*/
 .feedback-section {
-    height: 100vh;
     background: rgb(219, 219, 219);
     padding-bottom: 20px;
 }
