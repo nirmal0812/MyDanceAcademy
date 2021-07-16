@@ -3,39 +3,34 @@
     <head>
         <title>Nirmal Shrivastava</title>
         <link rel="stylesheet" href="css.css">
+        <script src="https://kit.fontawesome.com/e3380f1c7f.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
+        <!--Test 3 link----------------------------------------------------------------------------------->
+        <!-- <div class="test-div">
+            <a class="test-link" href="Test/test.html" target="_blank">Test Link</a>
+        </div> -->
         <nav>
             <img src="images/natraj.jpg" class="logo">
-            <a href="#e">Feedback</a>
-            <a href="#d">About Us</a>
-            <a href="#c">Workshops</a>
-            <a href="#b">Dance Styles</a>
             <a href="#a">Home</a>
+            <a href="#c">Dance Styles</a>
+            <a href="#b">Workshops</a>
+            <a href="#e">Feedback</a>
+            <a href="#d">About Us</a> 
         </nav>
         <header id="a">
-            <div class="main">
                 <h1>NATRAAJ DANCE ACADEMY</h1>
                 <p>Home to all dancers to explore the best in them no matter what their age and experience is.<br>
                 We believe in providing world class dance education which enables our students to become performers of global standards.</p>
-            </div>
         </header>
 
         <!-- ---------------------------------------------------------- -->
     <main>
-        <section class="workshops" id="c">
-            <h2>WORKSHOPS</h2>
-            <ul>
-                <li class="workshop"><video src="images/video1.mp4" controls></video></li>
-                <li class="workshop"><video src="images/video2.mp4" controls></video></li>
-            </ul> 
-        </section>
-
-        <!-- -------------------------------------------------------- --> 
-        <section class="dance-styles" id="b">
+        <section class="dance-styles" id="c">
             <h2>DANCE STYLES WE TEACH</h2>
-            <div class="main-styles"><ul>
+            <div class="main-styles">
+            <ul>
                 <li>
                     <figure><img src="images/kathak2.jpg" class="dance-img" alt="Kathak"></figure>
                     <figcaption>Kathak</figcaption>
@@ -78,9 +73,21 @@
 
         <!-- ---------------------------------------------------------- -->
 
+        <section class="workshops" id="b">
+            <h2>WORKSHOPS</h2>
+            <ul class="container">
+                <li><video src="images/video1.mp4" controls></video>
+                <li><video src="images/video2.mp4" controls></video></li>
+                <li><video src="images/video3.mp4" controls></video></li>
+                <li><video src="images/video4.mp4" controls></video></li>
+            </ul>
+        </section>
+
+        <!-- -------------------------------------------------------- --> 
+        <!-- FEEDBACK -->
         <section class="feedback-section" id="e">
             <h2>FEEDBACK</h2>
-            <form action="" method="GET">
+            <form action="" method="GET" class="flex-container">
                 <label>Name:</label>
                 <input type="text" name="name" placeholder="Rohan Sharma"><br>
 
@@ -88,7 +95,7 @@
                     <input type="email" name="email" placeholder="rohansharma@gmail.com"><br>
 
                 <label>Mobile No:</label>
-                <input type="number" name="name" placeholder="9999999999"><br>
+                <input type="text" name="name" placeholder="9999999999"><br>
 
                 <label>Your Comments:</label><br>
                     <textarea placeholder="Enter your feedback" name="feedback"></textarea><br>
@@ -103,17 +110,16 @@
     <!-- ---------------------------------------------------------- -->
         <footer class="about-us" id="d">
             <h2>ABOUT US</h2>
-            <div class="P">
-            <p class="para">We aim to give opportunities to people who are unable to take out time from their busy schedule
-                and given them opportunity to dance their soul out wih various couses in both online and offline mode.
-                You can visit the studio anytime and take demo classes for free.</p>
-            <p class="para">Contact: <br>Nirmal Shrivastava - 9999944444<br>
-                    Address:<br> Natraaj Kala Kendra, A - 602, Shahpura, Bhopal, MP</p></div>
+            <div class="footer-container">
+            <div class="para">We aim to give opportunities to people who are unable to take out time from their busy schedule<br>
+                And given them opportunity to dance their soul out wih various couses in both online and offline mode.
+                <br>
+                You can visit the studio anytime and take demo classes for free.</div>
+            <div class="para">Contact: <br>Nirmal Shrivastava - 9999944444<br>
+                    Address:<br> Natraaj Kala Kendra, A - 602, Shahpura, Bhopal, MP</div>
+                    </div>
                     <p class="copyright">&copy; 2021 | All rights reserved</p>
-
         </footer>
-
-
     </body>
 </html>
 

@@ -16,12 +16,59 @@ html {
     font-size: 20px;
 }
 /* ----------------------------------------------------------- */
+/* MEDIA QUERY*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+}
+
+
+/* ----------------------------------------------------------- */
+/* TEST LINK */
+
+.test-div {
+    padding: 5px;
+}
+
+.test-link:link,
+.test-link:visited {
+text-decoration: none;
+color: rgb(170, 26, 1);
+}
+
+.test-link:active,
+.test-link:hover {
+    color: rgb(230, 34, 0);
+}
+
+/* ----------------------------------------------------------- */
 /* HEADINGS  */
 h1,
 h2,
 h3 {
     font-weight: 300;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -36,41 +83,38 @@ h1 {
 }
 
 h2 {
+    position: relative;
     font-size: 180%;
     padding: 60px 10px 10px 10px;
-    color: rgb(228, 173, 70);
+    color: rgb(224, 162, 46);
     text-align: center;
     text-transform: uppercase;
 }
 h3 {
-    text-align: center;
-    padding: 15px;
-    color:rgb(228, 173, 70) ;
+    padding: 5px;
+    color:rgb(224, 146, 1);
 }
-
 
 /* NAVBAR */
 nav {
     z-index: 10;
-    display: block;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.884);
+    background-color: rgb(0, 0, 0);
 }
 
 nav img {
-    position: relative;
-    left: 10px;
+    margin-right: auto;
+    padding: 5px;
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    padding: 5px;
-    top: 5px;
 }
 nav a {
-    float: right;
     font-size: 80%;
-    margin-top: 12px;
     padding: 5px;
     margin-right: 15px;
     color: rgb(228, 203, 166);
@@ -85,132 +129,135 @@ nav a:active {
 /*----------------------------------------------------------*/
 /* MAIN SECTION */
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.788)), url(images/wp7104330-nataraja-wallpapers.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
-    /* background-attachment: fixed; */
 }
 
-.main{
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.main p {
-    padding: 5px;
-    font-size: small;
+header p {
     text-align: center;
-    color: rgb(228, 203, 166);
+    font-size: 65%;
+    color: rgb(230, 211, 139);
 }
 
 /*-----------------------------------------------------------------*/
 /*WORKSHOPS*/
 .workshops {
-    background-color: white;
-}
-.workshops video {
-    background-color: white;
-    position: relative;
-    left: 5px;
-    height: 75vh;
-    width: 98vh;
-    padding-right: 5%;
-    bottom: 10px;
+    /* background: rgb(219, 219, 219); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.767)),url(images/studio.jpg);
+    background-size: cover;
+    background-position: center;
+   
 }
 
-.workshops li{
-    background-color: white;
-    float: left;
+video {
+    height: 45vh;
+    width: 75vh;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container li {
     list-style: none;
 }
-
 /*-----------------------------------------------------------------*/
 /*DANCE STYLES*/
 .dance-styles{
     background-color: black;
-    padding: 0;
 }
 
-.main-styles {
-    position: relative;
-    list-style: none;
-    width: 100%;
+.main-styles ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .main-styles li {
-    position: relative;
+    padding: 10px;
+    list-style: none;
     background-color: black;
-    display: block;
-    float: left;
-    width: 25%;
+    overflow: hidden;
 }
 
 .main-styles li figure {
-    position: relative;
     width: 100%;
-    margin: 30px 0px 15px 32px;
     overflow: hidden;
     background-color: black;
 }
 
 .dance-img {
-    position: relative;
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
 
 .main-styles li figcaption {
-    position: relative;
     color: rgb(228, 203, 166) ;
-    text-align: left;
-    padding: 8px;
-    left: 50px;
+    text-align: center;
 }
 
 /*-----------------------------------------------------------------*/
 /*FEEDBACK SECTION*/
 .feedback-section {
-    position: relative;
-    top: 30px;
-    width: 100%;
+    height: 100vh;
+    background: rgb(219, 219, 219);
+    padding-bottom: 20px;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 input, textarea {
-    position: relative;
-    margin: 0;
-    width: 100%;
-    padding: 18px;
-    border: 1px solid rgb(228, 173, 70);
+    width: 95%;
+    padding: 8px;
+    border: 2px solid rgb(228, 173, 70);
+    border-radius: 0;
 }
-
 input[type="submit"] {
+    width: 95%;
+    border: none;
     background-color: rgb(228, 173, 70);
-    color: white;
-    font-weight: 200;
+    color: rgb(255, 255, 255);
     font-size: 110%;
     
 }
+input[type ="submit"]:active,
+input[type ="submit"]:hover {
+    background-color: rgb(230, 152, 7);
+}
 
 label {
-    position: relative;
+    align-self:flex-start;
     color: rgba(228, 173, 70, 0.911);
     font-size: 20px;
-    padding: 7px;
+    padding-left: 30px;
 }
 
 /* ------------------------------------------------------- */
 /* FOOTER */
 .about-us {
-    background-color: rgba(0, 0, 0, 0.945);
+    background-color: rgba(0, 0, 0, 0.884);
+    padding-bottom: 15px;
 }
-
+.about-us h2 {
+    padding: 20px 10px 10px 10px;
+}
 .para {
+    text-align: center;
     color: rgba(228, 173, 70, 0.555);
 }
-
 .copyright {
     text-align: center;
     color: white;
