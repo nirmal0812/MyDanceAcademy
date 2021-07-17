@@ -100,9 +100,10 @@ h3 {
         flex-wrap: wrap;
     }
     nav>img{
-        flex: 1 1 600px;
+        flex: 0;
     }
     nav>a{
+        margin-right: 5px;
         justify-items: center;
         flex: 1.75;
         display: flex;
@@ -128,8 +129,10 @@ nav >img {
 }
 nav> a {
     font-size: 80%;
-    padding: 5px;
-    margin-right: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-right: auto;
     color: rgb(228, 203, 166);
     text-decoration: none;
 }
@@ -200,14 +203,21 @@ header p {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
 }
 
 .main-styles li {
+    flex: 1 1 250px;
     padding: 10px;
     list-style: none;
     background-color: black;
     overflow: hidden;
+    margin: 2%;
+}
+
+.main-styles>ul>li>figure{
+    display: flex;
+    align-content: center;
 }
 
 .main-styles li figure {
@@ -217,6 +227,8 @@ header p {
 }
 
 .dance-img {
+    margin-right: auto;
+    margin-left: auto;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -225,6 +237,14 @@ header p {
 .main-styles li figcaption {
     color: rgb(228, 203, 166) ;
     text-align: center;
+}
+
+.main-styles>ul>li>figcaption {
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(228, 203, 166) ;
+    text-align: center;
+    width: 200px;
 }
 
 /*-----------------------------------------------------------------*/
